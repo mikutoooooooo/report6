@@ -25,40 +25,26 @@ public class InputBoard {
     
     public void input(String Player){
         
-        
-        
-
         int num;
 
-        
         if(Player == "o"){
-            
             System.out.println("0~8を入力してください"); 
             Scanner scan = new Scanner(System.in);     
             num = scan.nextInt(); 
         }
         else{
             num = (int)(Math.random()*9);
-
         }
-
-
-        
 
         if(strBoard.get(num) == "x" || strBoard.get(num) == "o"){
             System.out.println("そこにはすでに値が入っています。もう一度入力してください");
-            
             this.input(Player);
-            
-
         }
         
 
         else {
             strBoard.set(num, Player);
             System.out.println(strBoard);
-
         }
-
     }
 }
