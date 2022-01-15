@@ -1,17 +1,24 @@
-import java.util.Arrays;
+import java.util.ArrayList;
 public class Board {
-    public  void startBoard(){
-    int[][] threearray = {{0, 1, 2}, {3, 4, 5}, {6, 7, 8}};
-    for(int[] ary : threearray) {
-        for(int i = 0; i < ary.length; i++) {
-            System.out.print(ary[i] + " ");
-        }
-        System.out.println();
-    }
+    public void startBoard(ArrayList<Integer> deck) {
 
-   
+       
+        
+
+        for (int i = 0; i < 9; i++) {
+            deck.add(i);
+            if(i%3 == 2){
+                System.out.println(deck.get(i));
+            }
+            else{ 
+                System.out.print(deck.get(i));
+            } 
+        
+
+
+        }
     }
     
-    
+
     
 }
