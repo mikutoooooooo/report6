@@ -1,13 +1,14 @@
 import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.*;
 
 public class InputBoard {
         
     Board board = new Board();
     ArrayList<Integer> intBoard = new ArrayList<Integer>();
-    ArrayList<String> strBoard = new ArrayList<String>();
-
-    public void addstrBoard(){
+    //staticをつけることで後に作る判定メソットでも使用できるようにする。
+    static List<String> strBoard = Arrays.asList("a", "b", "c", "d", "e", "f", "g", "h", "i");
+    /*public void addstrBoard(){
         strBoard.add("a");
         strBoard.add("b");
         strBoard.add("c");
@@ -17,7 +18,7 @@ public class InputBoard {
         strBoard.add("g");
         strBoard.add("h");
         strBoard.add("i");
-    }
+    }*/
 
     
     
