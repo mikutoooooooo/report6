@@ -1,5 +1,8 @@
 import java.util.ArrayList;
+
+//数字でボードの座標と対応させるために作成
 public class Board {
+    
     public void startBoard(ArrayList<Integer> intBoard) {
 
        

@@ -22,7 +22,7 @@ public class InputBoard {
 
     
     
-    
+    //キーボード入力を受け付けるためのメソッド
     public void input(String Player){
         
         int num;
@@ -38,13 +38,32 @@ public class InputBoard {
 
         if(strBoard.get(num) == "x" || strBoard.get(num) == "o"){
             System.out.println("そこにはすでに値が入っています。もう一度入力してください");
+            //座標に値が入っている場合にもう一度メソッドを呼び出す（擬似ループ）
             this.input(Player);
         }
         
-
+            //指定した座標に代入
         else {
             strBoard.set(num, Player);
-            System.out.println(strBoard);
+            
+        }
+    }
+
+    //番を作成
+
+    public void StrBoard(){
+
+        for (int i = 0; i < 9; i++) {
+            
+            if(i%3 == 2){
+                System.out.println(strBoard.get(i));
+            }
+            else{ 
+                System.out.print(strBoard.get(i));
+            } 
+        
+
+
         }
     }
 }

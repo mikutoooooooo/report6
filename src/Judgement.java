@@ -7,10 +7,11 @@ public class Judgement {
     
 
     
-
+//oの勝ちパターンのメソッド
+//booleanにすることによってgameクラスでwinner()メソッドがtrue falseをかえそるようにした。
     public boolean winner(){
         
-
+//oの勝ちパターン羅列
         if ((inputBoard.strBoard.get(0) == "o" && inputBoard.strBoard.get(1) == "o" && inputBoard.strBoard.get(2) == "o") || (inputBoard.strBoard.get(3) == "o" && inputBoard.strBoard.get(4) == "o" && inputBoard.strBoard.get(5) == "o") || (inputBoard.strBoard.get(6) == "o" && inputBoard.strBoard.get(7) == "o" && inputBoard.strBoard.get(8) == "o")||(inputBoard.strBoard.get(0) == "o" && inputBoard.strBoard.get(3) == "o" && inputBoard.strBoard.get(6) == "o")||(inputBoard.strBoard.get(1) == "o" && inputBoard.strBoard.get(4) == "o" && inputBoard.strBoard.get(7) == "o")||(inputBoard.strBoard.get(2) == "o" && inputBoard.strBoard.get(5) == "o" && inputBoard.strBoard.get(8) == "o")||(inputBoard.strBoard.get(0) == "o" && inputBoard.strBoard.get(4) == "o" && inputBoard.strBoard.get(8) == "o")||(inputBoard.strBoard.get(2) == "o" && inputBoard.strBoard.get(4) == "o" && inputBoard.strBoard.get(6) == "o")){
 
             System.out.println("oの勝ちです！！");
@@ -22,6 +23,7 @@ public class Judgement {
 
 
     public boolean loser(){
+        //xの勝ちパターン羅列
         if ((inputBoard.strBoard.get(0) == "x" && inputBoard.strBoard.get(1) == "x" && inputBoard.strBoard.get(2) == "x") || (inputBoard.strBoard.get(3) == "x" && inputBoard.strBoard.get(4) == "x" && inputBoard.strBoard.get(5) == "x") || (inputBoard.strBoard.get(6) == "x" && inputBoard.strBoard.get(7) == "x" && inputBoard.strBoard.get(8) == "x")||(inputBoard.strBoard.get(0) == "x" && inputBoard.strBoard.get(3) == "x" && inputBoard.strBoard.get(6) == "x")||(inputBoard.strBoard.get(1) == "x" && inputBoard.strBoard.get(4) == "x" && inputBoard.strBoard.get(7) == "x")||(inputBoard.strBoard.get(2) == "x" && inputBoard.strBoard.get(5) == "x" && inputBoard.strBoard.get(8) == "x")||(inputBoard.strBoard.get(0) == "x" && inputBoard.strBoard.get(4) == "x" && inputBoard.strBoard.get(8) == "x")||(inputBoard.strBoard.get(2) == "x" && inputBoard.strBoard.get(4) == "x" && inputBoard.strBoard.get(6) == "x")){
 
             System.out.println("oの負けです...");
